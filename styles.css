@@ -21,6 +21,12 @@
     --color-font-body: #333333;
 }
 
+body {
+    color: var(--color-font-body);
+    font-family: "Noto Sans", Arial, sans-serif;
+    font-size: 0.875rem;
+}
+
 /* Layout */
 
 .container {
