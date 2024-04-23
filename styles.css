@@ -9,6 +9,18 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+textarea, button, input {
+    font: inherit;
+}
+
 /* Base */
 
 :root {
