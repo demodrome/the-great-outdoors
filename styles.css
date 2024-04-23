@@ -6,3 +6,13 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --color-primary: #4dff4d;
+    --color-primary-dark: #00cc00;
+    --color-primary-darker: #009900;
+    --color-graygreen: #001a00;
+    --color-light: #ffffff;
+    --color-mid: #fafafa;
+    --color-font-body: #333333;
+}
