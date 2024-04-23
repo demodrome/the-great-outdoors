@@ -1,3 +1,5 @@
+/* Reset */
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -7,6 +9,8 @@
     padding: 0;
 }
 
+/* Base */
+
 :root {
     --color-primary: #4dff4d;
     --color-primary-dark: #00cc00;
@@ -15,4 +19,42 @@
     --color-light: #ffffff;
     --color-mid: #fafafa;
     --color-font-body: #333333;
+}
+
+/* Layout */
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+/* Flex utility classes */
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-justify-sb {
+    justify-content: space-between;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
 }
