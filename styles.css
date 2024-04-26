@@ -24,7 +24,7 @@ textarea, button, input {
 /* Base */
 
 :root {
-    --color-primary: #4dff4d;
+    --color-primary: rgb(77, 255, 77);
     --color-primary-dark: #00cc00;
     --color-primary-darker: #009900;
     --color-graygreen: #001a00;
@@ -97,6 +97,15 @@ body {
 }
 
 /* Sections */
+
+.header {
+    height: 40rem;
+    background: 
+    linear-gradient(45deg, rgba(77, 255, 77, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url("./images/header.jpg");
+    background-size: cover;
+    background-position: bottom center;
+}
 
 section, .adventures {
     margin: 2rem 0;
