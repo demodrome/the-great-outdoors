@@ -76,3 +76,40 @@ body {
 .flex-3 {
     flex: 3;
 }
+
+/* Components */
+
+.navbar__nav {
+    display: flex;
+}
+
+.navbar__nav-link {
+    color: var(--color-light);
+    display: block;
+    padding: 1rem 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar__nav-link:hover {
+    color: var(--color-primary-darker);
+}
+
+.navbar__nav-item {
+    position: relative;
+}
+
+.navbar__nav-item::before {
+    content: "";
+    position: absolute;
+    background-color: var(--color-light);
+    opacity: .3;
+    height: 100%;
+    width: 0;
+    display: block;
+    transition: width .3s ease-out;
+}
+
+.navbar__nav-item:hover::before {
+    width: 100%;
+}
