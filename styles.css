@@ -99,12 +99,10 @@ body {
 /* Sections */
 
 .header {
-    height: 40rem;
-    background: 
-    linear-gradient(45deg, rgba(77, 255, 77, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%),
-    url("./images/header.jpg");
-    background-size: cover;
-    background-position: bottom center;
+    background-color: transparent;
+    width: 100%;
+    position: fixed;
+    transition: all .8s;
 }
 
 section, .adventures {
@@ -114,39 +112,72 @@ section, .adventures {
 
 /* Components */
 
+.brand {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    color: var(--color-light);
+}
+
+.hero {
+    height: 40rem;
+    background: 
+    linear-gradient(45deg, rgba(77, 255, 77, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url("./images/header.jpg");
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.hero__heading {
+    font-size: 2.6rem;
+    color: var(--color-light);
+    font-weight: 200;
+    margin-bottom: .6rem;
+}
+
+.hero__text {
+    color: var(--color-light);
+    line-height: 1.5;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero__btn {
+    display: inline-block;
+    padding: .7rem 2rem;
+    background-color: var(--color-light);
+    border-radius: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar > * {
+    flex: 1;
+}
+
 .navbar__nav {
     display: flex;
-}
-
-.navbar__nav-link {
-    color: var(--color-light);
-    display: block;
-    padding: 1rem 1.5rem;
-    position: relative;
-    z-index: 1;
-}
-
-.navbar__nav-link:hover {
-    color: var(--color-primary-darker);
+    gap: 3rem;
+    justify-content: flex-end;
 }
 
 .navbar__nav-item {
-    position: relative;
+    padding: 1.5rem 0;
 }
 
-.navbar__nav-item::before {
-    content: "";
-    position: absolute;
-    background-color: var(--color-light);
-    opacity: .3;
-    height: 100%;
-    width: 0;
-    display: block;
-    transition: width .3s ease-out;
+.navbar__nav-link {
+    font-size: 1.05rem;
+    color: var(--color-light);
+    opacity: .8;
+    transition: opacity .2s;
 }
 
-.navbar__nav-item:hover::before {
-    width: 100%;
+.navbar__nav-link:hover {
+    opacity: 1;
 }
 
 .adventure {
