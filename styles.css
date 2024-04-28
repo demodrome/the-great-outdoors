@@ -35,7 +35,7 @@ textarea, button, input {
 }
 
 body {
-    background-color: var(--color-bg-light);
+    background-color: var(--color-mid);
     color: var(--color-font-body);
     font-family: "Noto Sans", Arial, sans-serif;
     font-size: 0.875rem;
@@ -89,6 +89,7 @@ body {
     color: var(--color-primary-darker);
     font-size: 2.5rem;
     font-weight: 200;
+    text-align: center;
     margin-bottom: 1rem;
 }
 
@@ -96,6 +97,7 @@ body {
     max-width: 40rem;
     margin: 0 auto;
     line-height: 1.7;
+    text-align: center;
 }
 
 /* Sections */
@@ -105,6 +107,7 @@ body {
     width: 100%;
     position: fixed;
     transition: all .8s;
+    z-index: 1;
 }
 
 /* Components */
@@ -210,16 +213,27 @@ body {
     color: var(--color-primary-darker);
 }
 
+.adventures {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
 .adventure {
-    flex: 0 0 25%;
-    padding: 1.5rem 0;
+    flex: 0 1 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.2rem;
 }
 
 .adventure__img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: auto;
     vertical-align: center;
+    border-radius: 50%;
     transition: all .3s;
 }
 
@@ -230,6 +244,6 @@ body {
 .adventure__name {
     color: var(--color-primary-darker);
     font-size: 1.3rem;
-    margin-top: .7rem;
+    padding: 1rem 0;
     font-weight: 200;
 }
