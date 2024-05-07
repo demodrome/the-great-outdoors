@@ -118,6 +118,11 @@ body {
     margin-top: 5rem;
 }
 
+#testimonials {
+    background-color: var(--color-light);
+    padding-top: 5rem;
+}
+
 .footer {
     background-color: var(--color-graygreen);
     color: var(--color-light);
@@ -178,7 +183,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.hero__btn {
+.btn {
     background-color: var(--color-light);
     color: var(--color-primary-darker);
     display: inline-block;
@@ -187,9 +192,7 @@ body {
     transition: all .4s;
 }
 
-.hero__btn:hover {
-    /* background-color: var(--color-graygreen);
-    color: var(--color-light); */
+.btn:hover {
     transform: scale(1.05);
 }
 
@@ -278,4 +281,51 @@ body {
     font-size: 1.3rem;
     padding: 1rem 0;
     font-weight: 200;
+}
+
+.carousel {}
+
+.quote {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.quote__user {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.quote__user-name {
+    color: var(--color-primary-darker);
+    font-weight: 600;
+}
+
+.quote__user-img {
+    border-radius: 50%;
+    width: 75px;
+    height: auto;
+}
+
+.quote__message {
+    line-height: 2;
+    flex: 3;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cta {
+    align-items: center;
+    background: linear-gradient(to bottom right, var(--color-primary-dark) 0%, var(--color-primary-darker) 100%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+.cta__heading, .cta__text {
+    color: var(--color-bg-light);
 }
