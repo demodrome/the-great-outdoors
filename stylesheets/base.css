@@ -1,0 +1,46 @@
+/* Reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+textarea, button, input {
+    font: inherit;
+}
+
+/* Base */
+
+:root {
+    --color-primary: rgb(77, 255, 77);
+    --color-primary-dark: #00cc00;
+    --color-primary-darker: #009900;
+    --color-bg-light: #f1fdf1;
+    --color-graygreen: #001a00;
+    --color-light: #ffffff;
+    --color-mid: #fafafa;
+    --color-font-body: #333333;
+}
+
+body {
+    background-color: var(--color-mid);
+    color: var(--color-font-body);
+    font-family: "Noto Sans", Arial, sans-serif;
+    font-size: 0.875rem;
+}

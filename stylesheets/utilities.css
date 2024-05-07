@@ -1,0 +1,38 @@
+/* Flex utilities */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-justify-sb {
+    justify-content: space-between;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+/* Spacing utilities */
+.mb-sm {
+    margin-bottom: 15px;
+}
+
+.mb-md {
+    margin-bottom: 30px;
+}
+
+.mb-lg {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,31 @@
+.quote {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.quote__user {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.quote__user-name {
+    color: var(--color-primary-darker);
+    font-weight: 600;
+}
+
+.quote__user-img {
+    border-radius: 50%;
+    width: 75px;
+    height: auto;
+}
+
+.quote__message {
+    line-height: 2;
+    flex: 3;
+    display: flex;
+    align-items: center;
+    position: relative;
+}

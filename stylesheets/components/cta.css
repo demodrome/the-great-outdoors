@@ -1,0 +1,12 @@
+.cta {
+    align-items: center;
+    background: linear-gradient(to bottom right, var(--color-primary-dark) 0%, var(--color-primary-darker) 100%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+.cta__heading, .cta__text {
+    color: var(--color-bg-light);
+}

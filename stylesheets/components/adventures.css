@@ -1,0 +1,33 @@
+.adventures {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.adventure {
+    flex: 0 1 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.2rem;
+}
+
+.adventure__img {
+    width: 100%;
+    height: auto;
+    vertical-align: center;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.adventure__img:hover {
+    transform: scale(1.1);
+}
+
+.adventure__name {
+    color: var(--color-primary-darker);
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    font-weight: 200;
+}

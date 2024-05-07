@@ -1,0 +1,6 @@
+.brand {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    color: var(--color-light);
+}

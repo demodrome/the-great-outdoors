@@ -1,0 +1,32 @@
+.container {
+    max-width: 62.5rem;
+    margin: 0 auto;
+}
+
+/* Sections */
+.header {
+    background-color: transparent;
+    width: 100%;
+    position: fixed;
+    transition: all .8s;
+    z-index: 1;
+}
+
+#testimonials {
+    background-color: var(--color-light);
+}
+
+.footer {
+    background-color: var(--color-graygreen);
+    color: var(--color-light);
+    text-align: center;
+}
+
+.footer a {
+    font-weight: 700;
+}
+
+.footer a:hover {
+    border-bottom: 2px solid var(--color-light);
+    padding-bottom: 0.3rem;
+}
